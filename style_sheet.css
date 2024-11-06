@@ -1,10 +1,21 @@
 header {
-    font-family: 'Times New Roman', serif;
+  position: relative;
 }
 
-.header img {
-    width: 100%; /* Make the image fill the container's width */
-    height: auto; /* Maintain aspect ratio */
+.header-image {
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around; /* Or adjust based on your layout needs */
+  background: rgba(0, 0, 0, 0.5); /* Optional: Add transparency for readability */
+  padding: 10px;
 }
 
 body {
