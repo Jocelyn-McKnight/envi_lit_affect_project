@@ -18,12 +18,16 @@ header {
   padding: 10px;
 }
 
+.navbar button {
+    padding: 10px 15px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
 body {
     font-family: 'Times New Roman', serif;
-    border: 5px solid black; /* Adds a black border around the whole webpage */
     margin: 0; /* Removes any default margin around the body */
     padding: 0; /* Removes any default padding around the body */
-    box-sizing: border-box;
 }
 
 /* Center all h1 elements */
@@ -76,21 +80,6 @@ h1 {
     justify-content: flex-start;
     padding: 20px; /* Adjust padding to align with navbar */
     box-sizing: border-box;
-}
-
-/* Navbar styling */
-.navbar {
-    display: flex;
-    gap: 10px;
-    width: 100%;
-    margin-bottom: 20px; /* Ensure consistent spacing */
-    justify-content: center;
-}
-
-.navbar button {
-    padding: 10px 15px;
-    border: 1px solid black;
-    cursor: pointer;
 }
 
 /* Mobile layout: Stack columns on top of each other */
