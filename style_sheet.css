@@ -19,8 +19,9 @@ header {
 }
 
 .navbar button {
-    padding: 10px 15px;
-    border: 1px solid black;
+    padding: 15px 25px; /* Increase padding for larger button size */
+    font-size: 18px; /* Increase font size */
+    border: 2px solid black; /* Thicker border if desired */
     cursor: pointer;
 }
 
