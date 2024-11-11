@@ -1,6 +1,7 @@
 header {
   width: 100%;
   overflow: hidden; /* Ensures no vertical scrolling if the image is larger than the screen height */
+  font-family: 'Times New Roman', serif;
 }
 
 header img {
@@ -32,7 +33,7 @@ header img {
 .nav-buttons {
   display: flex;
   height: 50px;
-  gap: 10px;
+  gap: 15px;
   margin-left: auto;
   font-family: 'Times New Roman', serif;
   padding-right: 20px; /* Adds space to the right to avoid overflow */
