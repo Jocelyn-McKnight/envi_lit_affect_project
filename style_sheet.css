@@ -21,7 +21,7 @@ header {
 .navbar button {
     padding: 15px 25px; /* Increase padding for larger button size */
     font-size: 18px; /* Increase font size */
-    border: 2px solid black; /* Thicker border if desired */
+    font-family: 'Times New Roman', serif;
     cursor: pointer;
 }
 
