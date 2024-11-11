@@ -18,11 +18,12 @@ header img {
   justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
+  background-color: #333; /* Dark background color similar to the example */
   font-family: 'Times New Roman', serif;
 }
 
 .logo img {
-  height: 50px; /* Adjust size as needed */
+  height: 50px;
   cursor: pointer;
   margin-right: auto;
 }
@@ -35,12 +36,24 @@ header img {
   font-family: 'Times New Roman', serif;
 }
 
+.nav-buttons a {
+  color: white; /* White text color */
+  text-decoration: none;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-buttons a:hover {
+  background-color: #555; /* Slightly lighter background on hover */
+}
+
 .header .header-text {
     position: absolute;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 75px;
+    font-size: 50px;
     font-family: 'Times New Roman', serif;
     color: white; /* Adjust color based on visibility over the image */
     text-align: center;
