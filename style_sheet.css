@@ -21,16 +21,41 @@ header {
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  background: rgba(0, 0, 0, 0.5); /* Optional: Adds transparency */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0044cc; /* Blue background similar to the example */
+  padding: 10px 20px;
+  font-family: 'Times New Roman', serif;
+}
+
+.logo img {
+  height: 50px; /* Adjust size as needed */
+  cursor: pointer;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-buttons a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
   padding: 10px;
 }
 
-.navbar button {
-  padding: 15px 25px;
+.nav-buttons a:hover {
+  border-bottom: 2px solid white; /* Underline effect on hover */
+}
+
+.nav-buttons a i {
   font-size: 18px;
-  font-family: 'Times New Roman', serif;
-  cursor: pointer;
+}
+
+/* Optional: Styling for active page (highlighted section) */
+.nav-buttons a.active {
+  border-bottom: 2px solid white;
 }
 
 body {
