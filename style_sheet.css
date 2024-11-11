@@ -1,14 +1,15 @@
-header {
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.header-image {
   width: 100%;
-  overflow: hidden; /* Ensures no vertical scrolling if the image is larger than the screen height */
+  height: auto;
 }
 
-header img {
-  width: 100%; /* Make the image take up the full width of the screen */
-  height: auto; /* Maintain the aspect ratio */
-  display: block; /* Removes extra space below the image */
-}
-
+/* Navbar Styling */
 .navbar {
   position: absolute;
   top: 0;
@@ -18,34 +19,38 @@ header img {
   justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
-  background-color: #333; /* Dark background color similar to the example */
+  background-color: #333; /* Dark background color for navbar */
   font-family: 'Times New Roman', serif;
 }
 
 .logo img {
-  height: 50px;
+  height: 50px; /* Adjust size of logo as needed */
   cursor: pointer;
-  margin-right: auto;
 }
 
 .nav-buttons {
   display: flex;
-  height: 50px;
   gap: 10px;
-  margin-left: auto;
+}
+
+/* Style each button as a link */
+.nav-buttons button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
   font-family: 'Times New Roman', serif;
-}
-
-.nav-buttons a {
-  color: white; /* White text color */
-  text-decoration: none;
   padding: 10px 15px;
-  display: flex;
-  align-items: center;
+  cursor: pointer;
 }
 
-.nav-buttons a:hover {
+.nav-buttons button:hover {
   background-color: #555; /* Slightly lighter background on hover */
+}
+
+.nav-buttons .active {
+  background-color: #4CAF50; /* Green background for the active tab */
+  color: white;
 }
 
 .header .header-text {
