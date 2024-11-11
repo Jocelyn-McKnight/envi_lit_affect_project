@@ -8,6 +8,7 @@
 header {
   position: relative;
   text-align: center;
+  font-family: 'Times New Roman', serif;
 }
 
 .header-image {
@@ -23,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0044cc; /* Blue background similar to the example */
+  background-color:	#71797E; 
   padding: 10px 20px;
   font-family: 'Times New Roman', serif;
 }
@@ -42,20 +43,12 @@ header {
   color: white;
   text-decoration: none;
   font-size: 16px;
+  font-family: 'Times New Roman', serif;
   padding: 10px;
 }
 
 .nav-buttons a:hover {
   border-bottom: 2px solid white; /* Underline effect on hover */
-}
-
-.nav-buttons a i {
-  font-size: 18px;
-}
-
-/* Optional: Styling for active page (highlighted section) */
-.nav-buttons a.active {
-  border-bottom: 2px solid white;
 }
 
 body {
