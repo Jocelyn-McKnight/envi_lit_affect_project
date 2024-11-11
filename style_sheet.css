@@ -43,10 +43,16 @@ header img {
 
 .nav-buttons {
   display: flex;
-  height: 50px;
   gap: 10px;
   margin-left: auto;
   font-family: 'Times New Roman', serif;
+  font-size: 20px; /* Adjust font size as needed */
+  width: 120px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Remove any extra padding */
+  box-sizing: border-box; /* Ensures padding doesn't affect button size */
 }
 
 .header .header-text {
