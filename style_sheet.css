@@ -24,8 +24,7 @@ header img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:	#71797E; 
-  padding: 10px 20px;
+  padding: 5px 20px;
   font-family: 'Times New Roman', serif;
 }
 
@@ -37,9 +36,10 @@ header img {
 
 .nav-buttons {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   background-color:	#71797E; 
   margin-left: auto;
+  font-family: 'Times New Roman', serif;
 }
 
 body {
