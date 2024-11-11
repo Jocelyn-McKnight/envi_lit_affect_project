@@ -42,6 +42,19 @@ header img {
   font-family: 'Times New Roman', serif;
 }
 
+.header .header-text {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 75px;
+    font-family: 'Times New Roman', serif;
+    color: white; /* Adjust color based on visibility over the image */
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2;
+}
+
 body {
   font-family: 'Times New Roman', serif;
   margin: 0;
