@@ -94,14 +94,14 @@ header img {
   margin-left: auto;
   font-family: 'Times New Roman', serif;
 
-.header-text {
+.header .header-text {
     position: absolute;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 60px;
     font-family: 'Times New Roman', serif;
-    color: white;
+    color: white; /* Adjust color based on visibility over the image */
     text-align: center;
     white-space: nowrap;
     z-index: 2;
