@@ -1,56 +1,3 @@
-header {
-  width: 100%;
-  overflow: hidden; /* Ensures no vertical scrolling if the image is larger than the screen height */
-  font-family: 'Times New Roman', serif;
-}
-
-header img {
-  width: 100%; /* Make the image take up the full width of the screen */
-  height: auto; /* Maintain the aspect ratio */
-  display: block; /* Removes extra space below the image */
-}
-
-.navbar {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%); /* Centers the navbar */
-  width: 90%; /* Adjust width as needed to fit the image */
-  max-width: 100%; /* Ensures navbar does not exceed image width */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 10px; /* Adjust padding to keep buttons within bounds */
-  font-family: 'Times New Roman', serif;
-  overflow: hidden;
-}
-
-.logo img {
-  height: 50px;
-  cursor: pointer;
-  margin-right: auto;
-}
-
-.nav-buttons {
-  display: flex;
-  height: 50px;
-  gap: 10px;
-  margin-left: auto;
-  font-family: 'Times New Roman', serif;
-
-.header .header-text {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 60px;
-    font-family: 'Times New Roman', serif;
-    color: white;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 2;
-}
-
 body {
     font-family: 'Times New Roman', serif;
     border: 5px solid black; /* Adds a black border around the whole webpage */
@@ -105,6 +52,59 @@ h1 {
     justify-content: flex-start;
     padding: 20px; /* Adjust padding to align with navbar */
     box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  overflow: hidden; /* Ensures no vertical scrolling if the image is larger than the screen height */
+  font-family: 'Times New Roman', serif;
+}
+
+header img {
+  width: 100%; /* Make the image take up the full width of the screen */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Removes extra space below the image */
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the navbar */
+  width: 90%; /* Adjust width as needed to fit the image */
+  max-width: 100%; /* Ensures navbar does not exceed image width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px; /* Adjust padding to keep buttons within bounds */
+  font-family: 'Times New Roman', serif;
+  overflow: hidden;
+}
+
+.logo img {
+  height: 50px;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.nav-buttons {
+  display: flex;
+  height: 50px;
+  gap: 10px;
+  margin-left: auto;
+  font-family: 'Times New Roman', serif;
+
+.header .header-text {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 60px;
+    font-family: 'Times New Roman', serif;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2;
 }
 
 /* Mobile layout */
