@@ -107,23 +107,26 @@ header img {
     z-index: 2;
 }
 
-/* Mobile layout */
+/* Mobile layout: Stack columns on top of each other */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
+    .container {
+        flex-direction: column; /* Stack on top of each other */
+    }
 
-  .header-image {
-    max-height: 200px;
-  }
+    .header img {
+        max-height: 200px; /* Reduce max-height for mobile */
+    }
 
-  #draw-canvas {
-    height: 400px;
-  }
-
-  .left,
-  .right {
-    width: 100%;
-    height: auto;
-  }
+    .right,
+    .left {
+        width: 100%;
+        height: auto;
+    }
+    
+    .header .header-text {
+        font-size: 24px; /* Further scale down font size on smaller screens */
+        top: 5px; /* Adjust top positioning for mobile */
+        white-space: nowrap; /* Allow text wrapping */
+        padding: 0 10px; /* Add padding to prevent edge overflow */
+    }
 }
