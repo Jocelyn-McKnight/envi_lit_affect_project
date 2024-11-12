@@ -130,4 +130,23 @@ header img {
         white-space: nowrap; /* Allow text wrapping */
         padding: 0 10px; /* Add padding to prevent edge overflow */
     }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .nav-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 5px; /* Adjust gap between buttons */
+    width: 100%; /* Make buttons take up full width */
+    text-align: center;
+  }
+
+  .nav-buttons button, .nav-buttons a {
+    width: 90%; /* Adjust width as needed */
+    font-size: 1em; /* Adjust font size for readability */
+    padding: 10px; /* Adjust padding */
+  }
 }
