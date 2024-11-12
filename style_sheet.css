@@ -68,7 +68,7 @@ header img {
 
 .header .header-text {
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: 50%;
   transform: translate(-50%, -50%); /* Centers the text horizontally and vertically */
   font-size: 60px;
