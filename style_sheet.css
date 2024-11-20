@@ -81,7 +81,6 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
   z-index: 10; /* Ensures the navbar is above the image */
 }
 
