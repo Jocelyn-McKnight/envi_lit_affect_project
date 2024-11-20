@@ -110,7 +110,7 @@ h1 {
 /* Header Text Styling */
 .header-text {
   position: absolute; /* Position the text on the image */
-  bottom: 40px; /* Adjust the vertical position */
+  bottom: 30px; /* Adjust the vertical position */
   left: 50%;
   transform: translateX(-50%); /* Center the text horizontally */
   color: white; /* Text color */
