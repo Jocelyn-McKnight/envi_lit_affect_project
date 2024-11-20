@@ -76,12 +76,11 @@ h1 {
   position: absolute; /* Overlay the navbar on the image */
   top: 0;
   left: 0;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
   z-index: 10; /* Ensures the navbar is above the image */
 }
@@ -112,17 +111,16 @@ h1 {
 /* Header Text Styling */
 .header-text {
   position: absolute; /* Position the text on the image */
-  bottom: 20px; /* Adjust the vertical position */
+  bottom: 40px; /* Adjust the vertical position */
   left: 50%;
   transform: translateX(-50%); /* Center the text horizontally */
   color: white; /* Text color */
-  font-size: 1.5rem; /* Font size */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
   padding: 10px 20px; /* Padding around the text */
   border-radius: 5px; /* Rounded corners for the background */
   z-index: 10; /* Ensure the text is above the image */
   text-align: center;
-  font-family: 'Arial', sans-serif; /* Font for the text */
+  font-family: 'Times New Roman', serif;
+  font-size: 60px;
 }
 
 /* Responsive Design */
