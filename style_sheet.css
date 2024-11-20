@@ -79,34 +79,62 @@ header img {
   white-space: nowrap;
 }
 
+/* General Header Styling */
+.header {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.header-image-wrapper img {
+  width: 100%; /* Full width for the header image */
+  height: auto;
+}
+
+/* Navbar Styling */
 .navbar {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%); /* Centers the navbar */
-  width: 90%; /* Adjust width as needed to fit the image */
-  max-width: 100%; /* Ensures navbar does not exceed image width */
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10px; /* Adjust padding to keep buttons within bounds */
-  font-family: 'Times New Roman', serif;
-  overflow: hidden;
+  padding: 10px 20px;
+  background-color: #f9f9f9; /* Light background color for the navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .logo img {
-  height: 50px;
-  cursor: pointer;
-  margin-right: auto;
+  height: 50px; /* Set a consistent height for the logo */
+  cursor: pointer; /* Add pointer cursor */
 }
 
-.button img {
+/* Navigation Buttons */
+.nav-buttons {
   display: flex;
-  height: 50px;
-  gap: 10px;
-  margin-left: auto;
-  font-family: 'Times New Roman', serif;
+  gap: 15px; /* Space between buttons */
 }
+
+.nav-buttons a img {
+  height: 50px; /* Set button image height */
+  width: auto; /* Maintain aspect ratio */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.nav-buttons a img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  opacity: 0.9; /* Reduce opacity slightly on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack logo and buttons on small screens */
+  }
+  .nav-buttons {
+    justify-content: center; /* Center buttons in the navbar */
+    gap: 10px; /* Adjust spacing for smaller screens */
+  }
+
 
 /* Mobile layout: Stack columns on top of each other */
 @media (max-width: 768px) {
