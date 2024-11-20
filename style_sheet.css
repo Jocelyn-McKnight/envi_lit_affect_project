@@ -57,6 +57,17 @@ h1 {
     box-sizing: border-box;
 }
 
+.right img {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+}
+
+.image-container {
+        position: relative;
+        display: inline-block;
+}
+
 /* General Header Styling */
 .header {
   position: relative;
