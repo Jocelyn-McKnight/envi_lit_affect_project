@@ -19,6 +19,10 @@ h1 {
     align-items: flex-start; /* Aligns left and right columns to the top */
 }
 
+.left-column, .right-column {
+    flex: 1; /* Ensure both columns take equal space */
+    max-width: 50%; /* Prevent columns from exceeding 50% of container width */
+
 /* Left column */
 .left {
     flex: 1;
