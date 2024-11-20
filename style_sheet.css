@@ -109,15 +109,35 @@ h1 {
   opacity: 0.9; /* Reduce opacity slightly on hover */
 }
 
+/* Header Text Styling */
+.header-text {
+  position: absolute; /* Position the text on the image */
+  bottom: 20px; /* Adjust the vertical position */
+  left: 50%;
+  transform: translateX(-50%); /* Center the text horizontally */
+  color: white; /* Text color */
+  font-size: 1.5rem; /* Font size */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  padding: 10px 20px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners for the background */
+  z-index: 10; /* Ensure the text is above the image */
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Font for the text */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column; /* Stack logo and buttons on small screens */
-    align-items: center; /* Center elements in the navbar */
+    align-items: center;
   }
   .nav-buttons {
     justify-content: center; /* Center buttons in the navbar */
     gap: 10px; /* Adjust spacing for smaller screens */
+  }
+  .header-text {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+    padding: 8px 15px; /* Adjust padding for smaller screens */
   }
 
 /* Mobile layout: Stack columns on top of each other */
