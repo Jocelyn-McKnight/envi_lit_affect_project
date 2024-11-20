@@ -54,57 +54,41 @@ h1 {
     box-sizing: border-box;
 }
 
-.header {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-header img {
-  width: 100%; /* Make the image take up the full width of the screen */
-  height: auto; /* Maintain the aspect ratio */
-  display: block; /* Removes extra space below the image */
-}
-
-.header .header-text {
-  position: absolute;
-  top: 35px;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Centers the text horizontally and vertically */
-  font-size: 60px;
-  font-family: 'Times New Roman', serif;
-  color: white; /* Adjust color based on visibility over the image */
-  text-align: center;
-  z-index: 2;
-  white-space: nowrap;
-}
-
 /* General Header Styling */
 .header {
   position: relative;
   width: 100%;
+  height: auto;
   text-align: center;
 }
 
-.header-image-wrapper img {
+.header-image-wrapper {
+  position: relative;
+}
+
+.header-image {
   width: 100%; /* Full width for the header image */
   height: auto;
 }
 
 /* Navbar Styling */
 .navbar {
-  position: relative;
+  position: absolute; /* Overlay the navbar on the image */
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #f9f9f9; /* Light background color for the navbar */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  z-index: 10; /* Ensures the navbar is above the image */
 }
 
 .logo img {
   height: 50px; /* Set a consistent height for the logo */
-  cursor: pointer; /* Add pointer cursor */
+  cursor: pointer;
 }
 
 /* Navigation Buttons */
@@ -116,7 +100,7 @@ header img {
 .nav-buttons a img {
   height: 50px; /* Set button image height */
   width: auto; /* Maintain aspect ratio */
-  cursor: pointer; /* Pointer cursor for interactivity */
+  cursor: pointer;
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out; /* Smooth hover effect */
 }
 
@@ -129,12 +113,12 @@ header img {
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column; /* Stack logo and buttons on small screens */
+    align-items: center; /* Center elements in the navbar */
   }
   .nav-buttons {
     justify-content: center; /* Center buttons in the navbar */
     gap: 10px; /* Adjust spacing for smaller screens */
   }
-
 
 /* Mobile layout: Stack columns on top of each other */
 @media (max-width: 768px) {
