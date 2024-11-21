@@ -68,6 +68,29 @@ h1 {
         display: inline-block;
 }
 
+/* Download Button Styles */
+.download-button {
+    display: inline-block;
+    text-decoration: none; /* Remove underline */
+    border: none; /* No border */
+    outline: none; /* Remove focus outline */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.download-button img {
+    width: 30px; /* Adjust button size */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.download-button img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.download-button img:active {
+    transform: scale(0.95); /* Button "press" effect */
+}
+
 /* General Header Styling */
 .header {
   position: relative;
