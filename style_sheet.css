@@ -78,7 +78,7 @@ h1 {
 }
 
 .download-button img {
-    width: 30px; /* Adjust button size */
+    width: 15px; /* Adjust button size */
     height: auto; /* Maintain aspect ratio */
     transition: transform 0.2s ease-in-out; /* Smooth hover effect */
 }
