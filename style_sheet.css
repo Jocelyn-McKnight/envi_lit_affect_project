@@ -160,44 +160,7 @@ h1 {
   white-space: nowrap;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column; /* Stack logo and buttons on small screens */
-    align-items: center;
-  }
-  .nav-buttons {
-    justify-content: center; /* Center buttons in the navbar */
-    gap: 10px; /* Adjust spacing for smaller screens */
-  }
-  .header-text {
-    font-size: 1.2rem; /* Adjust font size for smaller screens */
-    padding: 8px 15px; /* Adjust padding for smaller screens */
-  }
-
-/* Mobile layout: Stack columns on top of each other */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stack on top of each other */
-    }
-
-    .header img {
-        max-height: 200px; /* Reduce max-height for mobile */
-    }
-
-    .right,
-    .left {
-        width: 100%;
-        height: auto;
-    }
-    
-    .header .header-text {
-        font-size: 24px; /* Further scale down font size on smaller screens */
-        top: 5px; /* Adjust top positioning for mobile */
-        white-space: nowrap; /* Allow text wrapping */
-        padding: 0 10px; /* Add padding to prevent edge overflow */
-    }
-
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -205,14 +168,38 @@ h1 {
   }
 
   .nav-buttons {
-    gap: 5px; /* Adjust gap between buttons */
-    width: 100%; /* Make buttons take up full width */
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
     text-align: center;
   }
 
-  .nav-buttons button, .nav-buttons a {
-    width: 90%; /* Adjust width as needed */
-    font-size: 1em; /* Adjust font size for readability */
-    padding: 10px; /* Adjust padding */
+  .nav-buttons button,
+  .nav-buttons a {
+    width: 90%;
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .header img {
+    max-height: 200px;
+  }
+
+  .header .header-text {
+    font-size: 24px;
+    top: 5px;
+    white-space: normal; /* allows text wrapping */
+    padding: 0 10px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
 }
